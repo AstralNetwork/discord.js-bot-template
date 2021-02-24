@@ -26,7 +26,7 @@ Bot.on("message", message => {
 })
 
 
-if (command === "getping") { //Get the ping
+if (command === "getping") { //Gets the ping
     var yourping = new Date().getTime() - message.createdTimestamp
     var botping = Math.round(Bot.ws.ping)
     const member = message.author;
